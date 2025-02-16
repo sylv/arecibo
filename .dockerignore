@@ -1,0 +1,6 @@
+*
+!src
+!Cargo.toml
+!README.md
+!Dockerfile
+!LICENSE
