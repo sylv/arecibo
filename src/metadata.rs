@@ -4,8 +4,8 @@ use serde::Serialize;
 pub struct TorrentMetadata {
     pub name: String,
     pub size: u64,
-    /// The files in the torrent. If None, the torrent is a single file.
-    pub files: Option<Vec<TorrentMetadataFile>>,
+    pub created_at: Option<i64>,
+    pub files: Vec<TorrentMetadataFile>,
 }
 
 #[derive(Debug, Serialize)]
